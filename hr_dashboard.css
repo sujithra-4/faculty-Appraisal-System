@@ -1,0 +1,189 @@
+/* ======= HR Dashboard Theme ======= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ======= Top Navbar ======= */
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 60px;
+}
+.navbar-custom h3 {
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ======= Logout Button ======= */
+.logout-btn {
+    background: #dc3545;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease;
+    z-index: 99999;
+}
+.logout-btn:hover {
+    background: #bb2d3b;
+    transform: scale(1.05);
+}
+
+/* ======= Sidebar ======= */
+/* ======= Sidebar (Aligned + Cleaned) ======= */
+.sidebar {
+    width: 220px;
+    background: rgba(255,255,255,0.08);
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Sidebar Links List */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-links li {
+    width: 100%;
+}
+
+/* Sidebar Buttons */
+.sidebar a {
+    display: block;
+    width: 85%;
+    margin: 6px auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: linear-gradient(90deg, #00b4d8, #0077b6);
+    transform: scale(1.05);
+}
+
+/* ======= Submenu (Charts Options) ======= */
+.submenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease;
+}
+
+.submenu.show {
+    display: flex;
+}
+
+.submenu a {
+    width: 75%;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    margin: 5px auto;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.submenu a:hover {
+    background: linear-gradient(90deg, #00b4d8, #0077b6);
+    transform: scale(1.05);
+}
+
+/* Hover Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ======= Main Content ======= */
+.main-content {
+    margin-left: 240px;
+    padding: 100px 25px 50px;
+}
+
+.container {
+    background: #fff;
+    color: #004c91;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h4, h5 {
+    color: #004c91;
+    font-weight: 700;
+}
+
+.tick {
+    color: green;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* ======= Filter Container ======= */
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ======= Animation ======= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
